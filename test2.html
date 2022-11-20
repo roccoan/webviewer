@@ -32,10 +32,12 @@
             (
                 document.getElementById("stl_cont"),
                 {
-                    auto_rotate:false,
-                    bgcolor:"#20FAAC",
-                    allow_drag_and_drop:true,
-                    { models: [ {id:0, filename:"1.stl"}, {id:1, filename:"2.stl"}, {id:3, filename:"3.stl"} ] }
+                    models:
+                    [
+                        {filename:"1.stl", opacity:0.2, color:"#FF1212"},
+                        {filename:"2.stl", color:"#ffff00", display:"smooth"},
+                        {filename:"1.stl", opacity:0.2, color:"#FF1212"}
+                    ]
                 }
             );
         </script>
